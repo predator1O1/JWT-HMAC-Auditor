@@ -60,31 +60,19 @@ python3 jwt_crack.py -t "JWT_TOKEN" -w wordlist.txt -c 10
 Specify a checkpoint file:
 
 ```bash
-python3 jwt_crack.py \
--t "JWT_TOKEN" \
--w wordlist.txt \
--c 10 \
---checkpoint scan.checkpoint.json
+python3 jwt_crack.py -t "JWT_TOKEN" -w wordlist.txt -c 10 --checkpoint scan.checkpoint.json
 ```
 
 Resume an interrupted scan:
 
 ```bash
-python3 jwt_crack.py \
--t "JWT_TOKEN" \
--w wordlist.txt \
---checkpoint scan.checkpoint.json \
---resume
+python3 jwt_crack.py -t "JWT_TOKEN" -w wordlist.txt --checkpoint scan.checkpoint.json --resume
 ```
 
 Restart a scan from the beginning:
 
 ```bash
-python3 jwt_crack.py \
--t "JWT_TOKEN" \
--w wordlist.txt \
---checkpoint scan.checkpoint.json \
---restart
+python3 jwt_crack.py -t "JWT_TOKEN" -w wordlist.txt --checkpoint scan.checkpoint.json --restart
 ```
 
 Run `python3 jwt_crack.py --help` to view the available command-line options.
